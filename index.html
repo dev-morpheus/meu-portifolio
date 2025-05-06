@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portifolio-Vitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #0d0d0d;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffa500 !important;
+    }
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2017/08/10/06/32/raven-2619365_1280.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      color: #ffa500;
+    }
+    .btn-laranja {
+      background-color: #ffa500;
+      color: #000;
+    }
+    .btn-laranja:hover {
+      background-color: #ff8800;
+    }
+    .section-title {
+      color: #ffa500;
+      margin-bottom: 30px;
+    }
+    .card {
+      background-color: #1c1c1c;
+      border: none;
+      color: #fff;
+    }
+    footer {
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 60px 0;
+    }
+    footer h5 {
+      color: #ffa500;
+      margin-bottom: 20px;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffa500;
+    }
+    .footer-bottom {
+      border-top: 1px solid #222;
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">VitorCorreia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Olá, eu sou Vitor!</h1>
+      <p class="lead">Desenvolvedor apaixonado por criar experiências incríveis.</p>
+      <a href="#projetos" class="btn btn-laranja btn-lg mt-3">Ver Projetos</a>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Sobre Mim</h2>
+      <p class="lead">Sou um desenvolvedor com experiência em HTML, CSS, JavaScript e frameworks modernos. Busco sempre unir design e funcionalidade em projetos que façam a diferença.</p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title text-center">Projetos Recentes</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5 class="card-title">Landing Page</h5>
+            <p class="card-text">Uma landing page responsiva com foco em conversão.</p>
+            <a href="#" class="btn btn-laranja">Ver projeto</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5 class="card-title">Dashboard</h5>
+            <p class="card-text">Interface de dashboard com gráficos e painéis interativos.</p>
+            <a href="#" class="btn btn-laranja">Ver projeto</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h5 class="card-title">Portfólio Interativo</h5>
+            <p class="card-text">Este próprio portfólio foi feito com HTML, CSS e Bootstrap.</p>
+            <a href="#" class="btn btn-laranja">Ver projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Criativo</h5>
+          <p>Conectando desenvolvimento e criatividade.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Navegação</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <p>contato.vitorcorreiadm@email.com</p>
+          <p>(86) 99576-9910</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 VitorCorreia. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
